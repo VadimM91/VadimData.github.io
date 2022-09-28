@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Vadim Makeev - Israel Geo Data</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<!-- <a href="index.html" class="logo">Excel Project, Israeli Knesset</a> -->
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li><a href="Project1.html">The Israeli Knesset by generations</a></li>
+							<li class="active"><a href="Project2.html">Israel Geo Data</a></li>
+							<li><a href="Project3.html">Building My Website</a></li>
+							<li> <a href="About.html">About</a></li>
+							<!-- Reference Page <li><a href="elements.html">Elements Reference</a></li>-->
+						</ul>
+						<ul class="icons">
+							<li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/vadim-makeev-8891b1251/" class="icon-linkedin-sign icon-large"></span></a></li>
+							<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/VadimM91?tab=repositories" class="icon-github icon-large"></i></span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<!-- <span class="date">April 25, 2017</span> -->
+									<h1>Israeli population<br />
+										Location Data</h1>
+									<p>Mapping the cities of Israel</p>
+								</header>
+								<div class="image main"><img src="images/top.10.map.png" alt="" /></div>
+								<!-- <p>Paragraph 1 Example: here it goes - Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. </p> -->
+								
+								
+								<h2>About The Map</h2>
+								<p>I wanted to see how dense were the 10 biggest cities in Israel, for which Tableau was an ideal choise. <br>
+									The location data used to populate this map was sourced from a <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTJVdNqNFBmps9ldFDeacw1Sao3ihqcq-VDmta-w5O77hrIHe4fhD_DVi-oe0TQyi-DghDCFhBElBQ8/pubhtml?widget=true&amp;headers=false">Location Index dataset </a> I created, Which itself was sourced from <a target="_blank" rel="noopener noreferrer" href="https://www.mediawiki.org/wiki/GeoHack">Wikipedia's GeoHack.</a><br>
+								
+								<p>I then merged it with the <a target="_blank" rel="noopener noreferrer" href="https://www.cbs.gov.il/en/Pages/default.aspx">Israeli Central Bureau of Statistics </a> - <a target="_blank" rel="noopener noreferrer" href="https://www.cbs.gov.il/en/publications/Pages/2021/Population-Statistical-Abstract-of-Israel-2021-No.72.aspx">2021 Population Database. </a> </p>
+								
+								
+
+								<h2>Full Map view</h2>
+								<p>This image is taken from an <a target="_blank" rel="noopener noreferrer" href="https://public.tableau.com/views/IsraelMap255geoIndexv_01/map_view_1?:language=en-US&:display_count=n&:origin=viz_share_link&:showVizHome=no">Interactive Tableau Visualization</a> I created.</p>
+								<div class="image main"><img src="images/map.view.top.png" alt="" /></div>
+								<p>With all 255 Local governments in Israel placed on the map, we can now sync all the data from the <a target="_blank" rel="noopener noreferrer" href="https://www.cbs.gov.il/en/Pages/default.aspx">Israeli Central Bureau of Statistics </a> to be displayed on the map. </p>
+
+
+								<h2>The making of the project</h2>
+								<p> When I first saw the power of Tableau I was immediately hooked! <br>
+									The elegance and the flow of the program astonished me. After working with SQL, Excel & Python and doing everything in code form, 
+									playing with the parameters on a GUI felt like cheating. Why haven't I used it before?
+								</p>
+								<p>I was excited about making a map of Israel and connecting it to official government data.
+									But to my surprise, there was no built-in location data for Israel in Tableau (not even a city index), 
+									even though an equivalent data set was available for the US. This meant I had to go ahead and make one myself, 
+									which was essentially the same story as with the other project I did 
+									 - <a target="_blank" rel="noopener noreferrer" href="Project1.html">The Israeli Knesset by Generations</a>.
+								</p>
+								<p> After searching for the best data source for Israeli cities, I decided on Wikipedia and its GeoHack tool. 
+									However, the location data was in Coordinates format and had to be converted into Decimal Format and merged with 
+									existing Authority Symbol No. in correspondence with the Israeli Central Bureau of Statistics data structure, for future manipulations. 
+									This resulted in a new data set, containing all 255 Israeli local governments. 									
+								</p>
+								<p>The project is on-going and is periodically updated with new data and parameters.<br>
+									For more works visit <a href="index.html">My Website</a>.	
+								</p>
+							</section>
+							
+					</div>
+					
+					
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Location</h3>
+								<p>Rishon LeZion, Tel Aviv, Israel</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href=mailto:vadim.makeev.91@gmail.com>vadim.makeev.91@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/vadim-makeev-8891b1251/" class="icon-linkedin-sign icon-large"></span></a></li>
+									<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/VadimM91?tab=repositories" class="icon-github icon-large"></i></span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+					<header id="header">
+						<a href="index.html" class="logo">All my Projects</a>
+					</header>
+
+				<!-- Copyright 
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>-->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
