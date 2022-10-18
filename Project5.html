@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Vadim Makeev - Knesset Israel</title>
+		<title>Vadim Makeev - Plotting with R</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -27,12 +27,12 @@
 					<nav id="nav">
 						<ul class="links">
 							<li><a href="index.html">Projects</a></li>
-							<li class="active"><a href="Project1.html">The Israeli Knesset by generations</a></li>
-							<li> <a href="Project2.html">Israel Geo Data</a></li>
-							<li> <a href="Project3.html">Scraper</a></li>
+							<li><a href="Project1.html">The Israeli Knesset by generations</a></li>
+							<li><a href="Project2.html">Israel Geo Data</a></li>
+							<li><a href="Project3.html">Scraper</a></li>
 							<li><a href="Project4.html">SQL</a></li>
-							<li><a href="Project5.html">R</a></li>
-							<li> <a href="About.html">About</a></li>
+							<li class="active"><a href="Project5.html">R</a></li>
+							<li><a href="About.html">About</a></li>
 							<!-- Reference Page <li><a href="elements.html">Elements Reference</a></li>-->
 						</ul>
 						<ul class="icons">
@@ -48,75 +48,83 @@
 							<section class="post">
 								<header class="major">
 									<!-- <span class="date">April 25, 2017</span> -->
-									<h1>The Israeli Knesset <br> by Generations <br />
-									</h1>
-									<p>This project was inspired by the work of <a target="_blank" rel="noopener noreferrer" href="https://www.wcd.fyi/">Will Donnell</a>, who looked into the US Senate.</p>
+									<h1>Plotting with R<br>the Israeli Knesset<br />
+										</h1>
+									<p>Scatter plots: "The Israel Knesset by Generations"</p>
 								</header>
-								<div class="image main"><img src="images/Knesset.Cropped.Site.png" alt="" /></div>
+								<div class="image main"><img src="images/1.plot.r.png" alt="" /></div>
 								<!-- <p>Paragraph 1 Example: here it goes - Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. </p> -->
 								
-								
 								<h2> About This Chart</h2>
-								<p>The data used to populate this chart was sourced from an <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR_08p_FnQ1Md8_28cc9D-N3Mr8zT80C56Uvq7FmCpW_sj2n1Pc0D8NkaTS9qoZeRqPBV2mmy0EDlzJ/pubhtml?widget=true&amp;headers=false">Excel dataset </a> I created, <br> Which itself was sourced from the <a target="_blank" rel="noopener noreferrer" href="https://main.knesset.gov.il/mk/Pages/Previous.aspx?pg=mkpknessethist">Israeli Knesset Website.</a></p>
+								<p>Each square on the scatter plot represents an Israeli Knesset member, and each color - a generation.</p>
+								
+								<p>The data used to populate this chart was sourced from an <a target="_blank" rel="noopener noreferrer" href="https://github.com/VadimM91/SQL_database_Israeli_Knesset">SQL dataset </a> I created, <br> Which itself was sourced from the <a target="_blank" rel="noopener noreferrer" href="https://main.knesset.gov.il/mk/Pages/Previous.aspx?pg=mkpknessethist">Israeli Knesset Website.</a></p>
 								<p>Generational breakdown uses age brackets defined by the <a target="_blank" rel="noopener noreferrer" href="https://www.pewresearch.org/fact-tank/2019/01/17/where-millennials-end-and-generation-z-begins/">Pew Research Center</a>, except for "Missionary Generation", which is defined by the <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Strauss%E2%80%93Howe_generational_theory#Missionary_Generation"> Strauss–Howe generational theory:</a></p>
+								
 								<table>
 									<tr>
 									  <th>Name</th>
 									  <th>Birth Years</th>
 									</tr>
 									<tr>
-									  <td>Missionary Generation</td>
+									  <td>1. Missionary Generation</td>
 									  <td>1860-1882</td>
 									</tr>
 									<tr>
-									  <td>Lost Generation</td>
+									  <td>2. Lost Generation</td>
 									  <td>1883-1900</td>
 									</tr>
 									<tr>
-									  <td>Greatest Generation</td>
+									  <td>3. Greatest Generation</td>
 									  <td>1901-1927</td>
 									</tr>
 									<tr>
-									  <td>Silent Generation</td>
+									  <td>4. Silent Generation</td>
 									  <td>1928-1945</td>
 									</tr>
 									<tr>
-									  <td>Baby Boomers</td>
+									  <td>5. Baby Boomers</td>
 									  <td>1946-1964</td>
 									</tr>
 									<tr>
-									  <td>Generation X</td>
+									  <td>6. Generation X</td>
 									  <td>1965-1980</td>
 									</tr>
 									<tr>
-									  <td>Millennials Y</td>
+									  <td>7. Millennials Y</td>
 									  <td>1981-1996</td>
 									</tr>
 								</table>
 
 								<p> Vacancies in the Israeli Knesset are not uncommon. For instance, when a Knesset member dies or resigns. <br>
-									The tiles on this chart use the Knesset member that was holding the seat for the majority of the term. </p>
-								<p>As I was going through the data I noticed how the average age of a Knesset Member has increased over the years.</p>
-							    
-								<h2>Another view</h2>
-								<p>This graph shows the Average Age of Knesset Member, by Year of Knesset.</p>
-								<div class="image main"><img src="images/avg.age.cropped.png" alt="" /></div>
+									The squares on this scatter plot use the Knesset member that was holding the seat for the majority of the term. </p>
 								
-								<h2>The making of the project</h2>
-								<p>This project was inspired by the work of <a target="_blank" rel="noopener noreferrer" href="https://www.wcd.fyi/">Will Donnell</a>, 
-									who looked into the US Senate.
-								</p>
-								<p>Searching for a similar representation for the Israeli Knesset, and finding none, I decided on making one myself. 
-									However, there were no premade structured data or API. The closest thing available was the Israeli Knesset website, presenting pictures and dates of birth. 
-								</p>
-								<p>After considering the potential legal implication of scraping a government website, I decided to construct the dataset by hand, from scratch. Raw data was cleaned, validated, filtered, and conditionally formatted. 
-									The resulting table was further processed with a graphic design tool, to make a presentable and user-friendly slide.
-								</p>
-								<p>For more works visit <a href="index.html">My Website</a>.								
-								</p>
-							</section>
+								<h2>About This Project</h2>
+								<p>With the goal of creating a professional visualization from my Israeli Knesset members database,
+									I decided to export it from PostgreSQL to R.
+									 </p>
+									
+									<p>For a fair represantation, inclusive of duplicate values, the data was presented on a scatter plot. 
+										Here is another view with the x and y axis swapped:</p>
+									
+									<div class="image main"><img src="images/2.plot.r.png" alt="" /></div>
 
+									<p>The project is on-going and is periodically updated with new data and parameters.
+									</p>
+									</p>
+
+									<p>The project is available on <a target="_blank" rel="noopener noreferrer" href="https://github.com/VadimM91/Plotting_with_R-Israeli_Knesset">my GitHub</a>.
+									</p>
+
+								<p>For more works visit <a href="index.html">My Website</a>.	
+								</p>
+						
+
+							</section>
+							
 					</div>
+					
+					
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -142,6 +150,7 @@
 					<header id="header">
 						<a href="index.html" class="logo">All my Projects</a>
 					</header>
+
 				<!-- Copyright 
 					<div id="copyright">
 						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>

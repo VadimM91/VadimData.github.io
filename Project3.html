@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Vadim Makeev - Building My Website</title>
+		<title>Vadim Makeev - Local Scraper</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -29,8 +29,10 @@
 							<li><a href="index.html">Projects</a></li>
 							<li><a href="Project1.html">The Israeli Knesset by generations</a></li>
 							<li><a href="Project2.html">Israel Geo Data</a></li>
-							<li class="active"><a href="Project3.html">Building My Website</a></li>
-							<li> <a href="About.html">About</a></li>
+							<li class="active"><a href="Project3.html">Scraper</a></li>
+							<li><a href="Project4.html">SQL</a></li>
+							<li><a href="Project5.html">R</a></li>
+							<li><a href="About.html">About</a></li>
 							<!-- Reference Page <li><a href="elements.html">Elements Reference</a></li>-->
 						</ul>
 						<ul class="icons">
@@ -46,23 +48,35 @@
 							<section class="post">
 								<header class="major">
 									<!-- <span class="date">April 25, 2017</span> -->
-									<h1>Creating This Website<br />
+									<h1>Local Scraper <br> Israeli Knesset<br />
 										</h1>
-									<p>An HTML Project</p>
+									<p>A Python Decompiler from HTML-TXT to CSV an SQL Database</p>
 								</header>
-								<div class="image main"><img src="images/Website.Image.png" alt="" /></div>
+								<div class="image main"><img src="images/2.scraper_main.png" alt="" /></div>
 								<!-- <p>Paragraph 1 Example: here it goes - Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. </p> -->
-								
+								<h2> About This Image</h2>
+								<p>This is a snippet of my local Python HTML-TXT to CSV SQL Database Decompiler of the Official Israeli Knesset website.
+									The code extracts the years of birth of one Knesset cycle, combined with the rest of the code we can obtain a complete
+									database of the Knesset.  
+								</p>
 								
 								<h2>About This Project</h2>
-								<p>Aiming to present my work in the most pleasent and convenient way, I found myself wavering between building a website and storing the projects on GitHub. 
-									After some consideration and self-reflection about my own goals and preferences, I decided on making a website. 
-									However, services like Wix and Webflow did not allow the level of customisation I was striving for. 
-									The end result is the self-made website you see here, which is based on a template and edited using HTML.
-								</p>
-								<p>Working on this project made me appreaciate the fine work of web designers,
-									which is often taken for granted when casually browsing the internet.
-								</p>
+								<p>Aiming to streamline the process of creating a database of The Israeli Knesset Members, and after many failed attempts to 
+									scrape the Israeli Knesset website online, I decided to build a local offline HTML scraper to obtain the data. </p>
+									
+									<p>I developed a program that extracts a CSV file with the full names, date of birth, and the candidacy of the 
+										Israeli Knesset members from the Official Israeli Knesset website by year of Knesset.</p>
+									
+									<p>The CSV file is then imported into an SQL Database for further manipulations in Excel and R to produce 
+										visualizations of different generations in each Israeli Knesset cycle. </p>
+									
+									<p>Working on this project allowed me to hone my skills with Python and HTML on an official government website, 
+										overcoming many challenges while making sure that the final program will be 100% accurate and dynamic.</p>
+									</p>
+
+									<p>The project is available on <a target="_blank" rel="noopener noreferrer" href="https://github.com/VadimM91/Knesset_Scraper">my GitHub</a>.
+									</p>
+
 								<p>For more works visit <a href="index.html">My Website</a>.	
 								</p>
 						
@@ -78,7 +92,7 @@
 						<section class="split contact">
 							<section class="alt">
 								<h3>Location</h3>
-								<p>Rishon LeZion, Tel Aviv, Israel</p>
+								<p>Tel Aviv, Israel</p>
 							</section>
 							<section>
 								<h3>Email</h3>
